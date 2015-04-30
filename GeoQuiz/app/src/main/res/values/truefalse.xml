@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean</string>
     <string name="question_mideast">The Suez Canal connects the Red Sea and the Indian Ocean</string>
     <string name="question_java">Java was created by James Gosling</string>
@@ -8,5 +7,4 @@
     <string name="question_xml">XML stands for "X-ray machine language"</string>
     <string name="question_quest">Your quest is to seek Awesomeness in all things Android!</string>
     <string name="question_assyria">The capital of Assyria is Parma</string>
-
 </resources>

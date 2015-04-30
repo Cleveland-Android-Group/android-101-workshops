@@ -24,7 +24,7 @@ public class QuestionBank {
 
     public TrueFalse questionNumber(int i) {
         try {
-            return questions.get(i - 1);
+            return questions.get(i);
         } catch (IndexOutOfBoundsException e) {
             return null;
         }

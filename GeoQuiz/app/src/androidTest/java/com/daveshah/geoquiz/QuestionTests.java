@@ -12,18 +12,18 @@ public class QuestionTests extends AndroidTestCase {
         assertEquals(6, questionCount);
     }
 
-    public void testThatItCanObtainAQuestionByItsNumber() {
+    public void testThatItCanObtainAQuestionByItsIndex() {
         QuestionBank questionBank = new QuestionBank(getContext());
 
-        TrueFalse trueFalseQuestion = questionBank.questionNumber(1);
+        TrueFalse trueFalseQuestion = questionBank.questionNumber(0);
 
         assertNotNull(trueFalseQuestion);
     }
 
-    public void testThatNumbersStartWith1() {
+    public void testThatNumbersStartWith0() {
         QuestionBank questionBank = new QuestionBank(getContext());
 
-        TrueFalse trueFalseQuestion = questionBank.questionNumber(0);
+        TrueFalse trueFalseQuestion = questionBank.questionNumber(-1);
 
         assertNull(trueFalseQuestion);
     }
