@@ -30,6 +30,13 @@ public class QuizActivity extends ActionBarActivity {
                 Toast.makeText(QuizActivity.this, R.string.correct_toast_message, Toast.LENGTH_LONG).show();
             }
         });
+
+        falseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(QuizActivity.this, R.string.incorrect_toast_message, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 
