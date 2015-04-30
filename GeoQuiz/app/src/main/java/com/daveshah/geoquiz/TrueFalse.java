@@ -2,19 +2,19 @@ package com.daveshah.geoquiz;
 
 public class TrueFalse {
 
-    private final int questionResourceId;
+    private String question;
     private final boolean answer;
 
-    public TrueFalse(int questionResourceId, boolean answer) {
-        this.questionResourceId = questionResourceId;
+    public TrueFalse(String question, boolean answer) {
+        this.question = question;
         this.answer = answer;
-    }
-
-    public int getQuestionResourceId() {
-        return questionResourceId;
     }
 
     public boolean getAnswer() {
         return answer;
+    }
+
+    public String getQuestion() {
+        return question;
     }
 }
