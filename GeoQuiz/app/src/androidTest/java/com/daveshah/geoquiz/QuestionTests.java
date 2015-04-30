@@ -2,15 +2,29 @@ package com.daveshah.geoquiz;
 
 import android.test.AndroidTestCase;
 
-import java.util.List;
-
 public class QuestionTests extends AndroidTestCase {
 
     public void testThatItProvides6Questions() {
         QuestionBank questionBank = new QuestionBank(getContext());
 
-        List<TrueFalse> questions = questionBank.getAllQuestions();
+        int questionCount = questionBank.getQuestionCount();
 
-        assertEquals(6, questions.size());
+        assertEquals(6, questionCount);
+    }
+
+    public void testThatItCanObtainAQuestionByItsNumber() {
+        QuestionBank questionBank = new QuestionBank(getContext());
+
+        TrueFalse trueFalseQuestion = questionBank.questionNumber(1);
+
+        assertNotNull(trueFalseQuestion);
+    }
+
+    public void testThatNumbersStartWith1() {
+        QuestionBank questionBank = new QuestionBank(getContext());
+
+        TrueFalse trueFalseQuestion = questionBank.questionNumber(0);
+
+        assertNull(trueFalseQuestion);
     }
 }
