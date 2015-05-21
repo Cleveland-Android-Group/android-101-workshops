@@ -16,5 +16,5 @@ Thanks!
 
 ## Projects
 
-* GeoQuiz - Chapter 1 (3/26/2015)
+* GeoQuiz - Chapter 1 & 2 (3/26/2015), (4/30/2015)
 
